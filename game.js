@@ -130,6 +130,7 @@ document.getElementById("startBtn").onclick = function () {
   canvas.style.display = "block";
 
   document.getElementById("bgm").currentTime = 0;
+  document.getElementById("bgm").volume = 0.001;
   document.getElementById("bgm").play();
 
   initObstacles();
@@ -158,3 +159,4 @@ canvas.addEventListener("mousedown", function () {
 canvas.addEventListener("mouseup", function () {
   isPressing = false;
 });
+
